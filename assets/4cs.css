@@ -1386,11 +1386,47 @@ details {
   .cinema-hero {
     min-height: auto;
     padding: 72px 18px 38px;
-    background-image: linear-gradient(180deg, rgba(6,11,10,0.82), rgba(6,11,10,0.62)), url("/assets/diamond-desk-hero.webp");
+    background-image:
+      linear-gradient(180deg, rgba(255,253,247,0.95) 0%, rgba(255,253,247,0.84) 54%, rgba(255,253,247,0.6) 100%),
+      url("/assets/diamond-desk-hero.webp");
+    background-position: 58% center;
+  }
+  .cinema-hero h1,
+  .cinema-hero .lede {
+    color: #0c1211;
   }
   .cinema-hero h1,
   .guide-hero h1 {
     font-size: 3.7rem;
+  }
+  .topbar {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .top-cta { order: 1; width: auto; }
+  .publisher-badge { order: 2; }
+  .nav {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 7px 9px;
+    font-size: 0.82rem;
+    border: 1px solid rgba(12,18,17,0.12);
+    background: rgba(15,118,104,0.06);
   }
   .hero-instruments {
     position: relative;
